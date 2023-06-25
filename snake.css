@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  background: url("background.jpg");
+  /* background: url("background.jpg"); */
+  background: grey;
   background-size: contain;
   display: flex;
   justify-content: center;
