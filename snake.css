@@ -15,7 +15,8 @@ body {
   box-sizing: border-box;
 }
 div {
-  width: 440px;
+  color: #ffd0a4;
+  width: 720px;
   background: #4d1700;
 }
 h1 {
@@ -50,7 +51,7 @@ h1 b {
   font-weight: 800;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
     background: white;
     position: absolute;
