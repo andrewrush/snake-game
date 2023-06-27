@@ -62,34 +62,29 @@ window.onload = function () {
   board.height = rows * blockSize;
   board.width = cols * blockSize;
   context = board.getContext("2d"); // For drawing on the board
-
+  updateValues();
   placeFood();
-
+	
   document.addEventListener("keydown", changeDirection);
 
   //   update();
-  setInterval(update, 1000 / 10);
+  setInterval(updateWorld, 1000 / 10);
 };
 
-window.onload = function () {
-  board = document.getElementById("board");
-  board.height = rows * blockSize;
-  board.width = cols * blockSize;
-  context = board.getContext("2d"); // For drawing on the board
+function updateValues(){
 
-  placeFood();
-
-  document.addEventListener("keydown", changeDirection);
-
-  //   update();
-  setInterval(update, 1000 / (10 * speed));
-};
+	automodeSmart = document.getElementById('automodeSmart').checked;
+	liveFood = document.getElementById('liveFood').checked;
+	
+	bodyRule = document.getElementById('bodyRule').checked;
+	boardRule = document.getElementById('boardRule').checked;
+}
 
 
-
-function update() {
+function updateWorld() {
   if (gameOver) {
 	if (food > best) best = food;
+	updateValues();
 	bestField.innerText = best;
 	
 	snakeX = 10 * blockSize;
@@ -214,7 +209,7 @@ function update() {
 			placeFood();
 		  }	
 	}
-
+    updateValues();
 	
 
 }
@@ -233,6 +228,9 @@ let changeDirection = function (e) {
   } else if (e.code == "ArrowRight" && velocityX != -1) {
     velocityX = 1;
     velocityY = 0;
+  }
+  else if (e.code == "Escape" || e.code == "Numpad0"|| e.code == "Space") {
+    document.getElementById('automodeSmart').click();
   }
 
   // if (automodeSmart) {	  

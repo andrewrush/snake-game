@@ -51,6 +51,19 @@ h1 b {
   font-weight: 800;
 }
 
+input[type=checkbox] {
+	vertical-align: top;
+	margin-left: 10px;
+	position: relative;
+	bottom: 1px;
+}
+  
+label {
+	color: #4d1700;
+	display: flex;
+	/* padding-left: 20px; */
+}
+
 @media screen and (max-width: 900px) {
   body {
     background: white;

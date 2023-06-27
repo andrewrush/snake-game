@@ -32,7 +32,31 @@
           <!-- working with <b>Mobile version</b>. Please wait few days. Thank you. -->
         <!-- </p> -->
       <!-- </div> -->
+	  
     </main>
+	<form>
+		<p style="color: #4d1700">Modes</p>
+        <label>
+			<input type="checkbox" id="automodeSmart" checked> 
+			 AutoMode (the snake moves on its own)
+        </label>
+  
+        <label>
+			<input type="checkbox" id="liveFood"> 
+			 Live Food (the food moves on its own)
+        </label>
+		<br><p style="color: #4d1700">Rules</p>
+        <label>
+			<input type="checkbox" id="bodyRule" checked> 
+			 Body Rule (if the snake touches its body, then the game is over)
+        </label>
+  
+        <label>
+			<input type="checkbox" value="true" id="boardRule" checked> 
+			 Board Rule (if the snake touches the board border, then the game is over)
+        </label>
+    </form>
+	
     <!-- Script -->
     <script src="snake.js"></script>
   </body>
