@@ -29,7 +29,7 @@ class SnakeBody {
 }
 
 // board
-let blockSize = 20;
+let blockSize = 15;
 let cols = 35;
 let rows = 35;
 let blockCount = (cols + rows) / 2;
