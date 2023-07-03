@@ -5,7 +5,7 @@ let speed = 2; //default = 1; max = 100 (turbomode)
 
 let food = 0;
 //let best = 0;
-let best = 69; //best I've ever seen :D (with body and board rules, 35x35)
+let best = 71; //best I've ever seen :D (with body and board rules, 35x35)
 
 foodField.innerText = food;
 bestField.innerText = best;
